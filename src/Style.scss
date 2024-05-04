@@ -34,7 +34,7 @@ main {
 }
 
 .app {
-  width: 700px;
+  width: 1000px;
   height: 700px;
   display: flex;
   align-items: center;
@@ -44,7 +44,7 @@ main {
 
 .score {
   height: 120px;
-  width: 100%;
+  width: 700px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -191,10 +191,43 @@ main {
   height: 100%;
   width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    p {
+      color: white;
+      font-weight: 700;
+      font-size: 45px;
+      letter-spacing: 1px;
+    }
+
+    button {
+      border: none;
+      width: 200px;
+      height: 45px;
+      border-radius: 10px;
+      color: $DarkText;
+      letter-spacing: 2px;
+      font-weight: 700;
+      transition: 0.2s;
+
+      &:hover {
+        color: hsl(349, 71%, 52%);
+        cursor: pointer;
+        transition: 0.2s;
+      }
+    }
+  }
 
   .side {
     height: 100%;
-    width: 100%;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -263,7 +296,7 @@ main {
       width: 220px;
       border-radius: 200px;
       background-color: hsl(237, 49%, 15%);
-      margin-top: 40px;
+      margin: 40px;
     }
   }
 }
